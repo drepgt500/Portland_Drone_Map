@@ -2,6 +2,51 @@
 
 .map {
     border: thin solid #999;
-    background: #F8FEFA;
+    background: #CCCCCC;
     margin: 10px 0 0 20px;
+}
+
+.infolabel {
+    position: fixed;
+    height: 20px;
+    width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    opacity: .7;
+    border: solid thin #fff;
+}
+
+.infolabelDOF {
+    position: fixed;
+    height: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    opacity: .7;
+    border: solid thin #fff;
+}
+td, h2 {
+  padding-left: 20px;
+  color: white;
+  font-family: Helvetica;
+  color: black;
+}
+
+h1, h3 {
+  color: black;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+a {
+  padding-left: 20px;
 }

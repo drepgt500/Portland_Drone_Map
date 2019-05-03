@@ -7,12 +7,64 @@
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 
-	<body style="background-color:#404040;">
+	<h1>Drone Site Locator Map - Portland, Oregon</h1>
+	<h3>This map was created to assist drone pilots find ideal location for recreational drone flights and to raise awareness of sensative areas.
+		 Please use this map as a starting point for site search and follow up with local authorities.</h3>
+	<h2>Layer Control</h2>
+	<div id="toggleContainer">
+        <table>
+            <tr>
+                <td><label class="switch">
+                    <input id="school_toggle" type="checkbox" checked="checked">
+                </label></td>
+                <td>Schools (Do NOT fly over public events or groups of people).</td>
+            </tr>
+						<tr>
+                <td><label class="switch">
+                    <input id="police_toggle" type="checkbox" checked="checked">
+                </label></td>
+                <td>Police Stations (Do NOT fly over or near emergency response efforts).</td>
+            </tr>
+						<tr>
+                <td><label class="switch">
+                    <input id="hospital_toggle" type="checkbox" checked="checked">
+                </label></td>
+                <td>Hospitals (Do NOT fly over or near emergency response efforts).</td>
+            </tr>
+						<tr>
+                <td><label class="switch">
+                    <input id="obstruction_toggle" type="checkbox" checked="checked">
+                </label></td>
+                <td>Obstruction Points (Stay clear of obstructions). AGL stands for Above Ground Level (reported in feet on the map).</td>
+            </tr>
+						<tr>
+                <td><label class="switch">
+                    <input id="arena_toggle" type="checkbox" checked="checked">
+                </label></td>
+                <td>Arenas (Do NOT fly over public events, groups of people, or stadiums full of people).</td>
+            </tr>
+						<tr>
+                <td><label class="switch">
+                    <input id="buffer_toggle" type="checkbox" checked="checked">
+                </label></td>
+                <td>Airport Buffers - 5 miles (Must have permission to fly near airport).</td>
+            </tr>
+        </table>
+    </div>
+
+	<body style="background-color:#E6E6E6;">
 		<script type="text/javascript" src="lib/d3/d3.js"></script>
 		<script type="text/javascript" src="lib/d3-geo-projection/d3-geo-projection.js"></script>
 		<script type="text/javascript" src="lib/topojson/topojson.js"></script>
 		<script type="text/javascript" src="lib/d3-queue/d3-queue.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
+
+	<h3>Additional Resources</h3>
+
+	<a href="https://www.faa.gov/uas/recreational_fliers/">Federal Aviation Administration (FAA) - Detailed information</a> <br> <br>
+	<a href="https://faadronezone.faa.gov/#/">FAA Drone Zone - Register your drone</a> <br> <br>
+	<a href="http://knowbeforeyoufly.org/air-space-map/">Know Before You Fly - National Airspace Map</a>
+
 
 </html>
