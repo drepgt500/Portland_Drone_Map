@@ -59,7 +59,7 @@
             //translate TopoJSON files
 
             var portlandOutline = topojson.feature(portland, portland.objects.Portland);
-            var airportXY = topojson.feature(airports, airports.objects.Airports).features;
+            var airportXY = topojson.feature(airports, airports.objects.Airports);
             var arenasXY = topojson.feature(arenas, arenas.objects.Arenas);
             var hospitalsXY = topojson.feature(hospitals, hospitals.objects.Hospitals);
             var policeXY = topojson.feature(police, police.objects.Police);
